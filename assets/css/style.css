@@ -1,6 +1,4 @@
 body {
-    
-    
     font-family: Circe-Regular;
     font-size: 18px;
     color: #FFFFFF;
@@ -280,12 +278,14 @@ transform: rotate(-15deg);
 .info_phone {
     background: transparent;
     border: none;
-
+    
     padding-bottom: 10px;
     border-bottom: 2px solid #FFFFFF;
 
+    
     color: #FFFFFF;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 17px;
     text-transform: uppercase;
    
@@ -295,19 +295,10 @@ transform: rotate(-15deg);
 
 }
 
-.info_phone:hover::placeholder {
-    opacity: 0.3;
-    transition: opacity .5s linear;
-    
+.info_phone:hover {
+    border-bottom: 0px solid #FFFFFF;
+        
 }
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 990px) {
