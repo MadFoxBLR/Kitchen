@@ -290,15 +290,14 @@ transform: rotate(-15deg);
     text-transform: uppercase;
    
 }
+
 .info_phone::placeholder {
     color: #FFFFFF; 
-
+    
 }
 
-.info_phone:hover {
-    border-bottom: 0px solid #FFFFFF;
-        
-}
+
+
 
 
 @media (max-width: 990px) {
