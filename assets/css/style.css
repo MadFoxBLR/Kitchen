@@ -293,6 +293,7 @@ transform: rotate(-15deg);
 
 .info_phone::placeholder {
     color: #FFFFFF; 
+    font-family: Circe-Regular;
     
 }
 
@@ -336,9 +337,7 @@ transform: rotate(-15deg);
 
 @media (max-width: 575px) {
 
-    .body {
-       
-    }
+   
 
     .intro {
         opacity: 0;
