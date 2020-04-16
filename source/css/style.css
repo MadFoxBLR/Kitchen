@@ -404,6 +404,7 @@ position: relative;
 
 .request__form {
    position: relative;
+   z-index: 2;
 }
 
 .request__item {
@@ -421,16 +422,19 @@ position: relative;
     font-size: 20px;
     line-height: 135%;
 }
-.form__text {
+.form__text, .form__text-name {
     width: 252px;
     height: 48px;
     font-size: 24px;
+    padding-left: 7px;
     
     background: #FFFFFF;
-    border: 1px solid #CCE5F1;
+    border: 0px solid #CCE5F1;
     box-sizing: border-box;
     border-radius: 4px;
 }
+
+
 .form__placeholder, .form__placeholder--comment {
     position: absolute;
     top: 53px;
@@ -460,6 +464,8 @@ position: relative;
     resize: none;
 
     font-size: 24px;
+    padding: 7px;
+    z-index: 2;
 }
 
 .request__comment  .form__name{
