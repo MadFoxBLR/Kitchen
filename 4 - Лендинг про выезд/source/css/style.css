@@ -498,14 +498,16 @@ position: relative;
     background-color: #292E31;
 
 }
-
-.submit {
+.submit:disabled {
+    opacity: 0.5;
+}
+.submit:enabled, .submit:disabled  {
     position: absolute;
    
     left: 23.26%;
     bottom: 70px;
 
-    background: #CBD7DA;
+    background: rgb(3, 241, 43);
     box-shadow: 0px 3px 0px #B5C0C2;
     border-radius: 3px;
 
@@ -516,12 +518,24 @@ position: relative;
     text-align: center;
     padding: 5px 25px;
 
-    color: #FFFFFF;
+    color: #333;
 
     z-index: 4;
 
 }
+.submit:enabled:hover {
+    cursor: pointer;
+
+    background: rgb(255, 251, 0);
+    box-shadow: 0px 7px 0px #B5C0C2;
+    border-radius: 10px;
+    transition: border-radius, box-shadow, background  .5s linear;
+
+}
+
+
 .submit__text {
+    opacity: 1;
     position: absolute;
     left: 38.26%;
     bottom: 67px;
@@ -531,6 +545,7 @@ position: relative;
     color: #000000;
 
 }
+
 .manager__name {
     position: absolute;
     left: 57.26%;

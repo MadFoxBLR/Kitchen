@@ -113,7 +113,7 @@
     <div class="container">
         <div class="tel__info">
             <div class="tel__text">Чтобы заказать замер и консультацию<br> 
-                на дому, заполните <span>форму</span> или позвоните:
+                на дому, заполните <a href="#C4"><span>форму</span></a> или позвоните:
             </div>
             <div class="tel__number">+375 29 125-29-91</div>
         </div>
@@ -171,38 +171,40 @@
     <div class="container">
         <div class="request">
             <div class="request__header">
-                <h2>Заявка на услугу выезда</h2>
+                <h2 id="C4">Заявка на услугу выезда</h2>
                 <div class="request__text"> Заполните форму, мы перезвоним и согласуем <br> дату и время выезда специалистов.</div>
             </div>
             
+        <form  action="https://formspree.io/2991216@gmail.com" method="POST">
             <div class="request__form">
                 <div class="request__item">
                     <div class="form__name">Имя</div>
-                    <input class="form__text-name" type="text">
+                    <input class="form__text-name" name="name" id='fio' onkeyup='checkParams()'>
                    <div class="form__placeholder">Николя</div>
                 </div> 
                  
                 <div class="request__item">
                     <div class="form__name">Телефон</div>
-                    <input class="form__text" type="tel">
+                    <input class="form__text" name="name"  id='phone' onkeyup='checkParams()'>
                     <div class="form__placeholder">+375 (29) 000-00-00</div>
                 </div>  
             
                 <div class="request__item">
                     <div class="form__name">Комментарий</div>
                  
-                    <textarea class="form__textarea" rows="10" cols="30"></textarea>
+                    <textarea class="form__textarea" rows="10" cols="30" name="message"  id='email' onkeyup='checkParams()'></textarea>
                     <div class="form__placeholder--comment">Укажите, в&nbsp;какое время удобно разговаривать. Вам нужны входные двери для дома или квартиры? Хотите сразу оформить договор и&nbsp;оплатить заказ?</div>
                 </div>
 
             </div>
-              
+        
 
             <img class="manager" src="source/img/image 19.png" alt="">
             <div class="konsultacia">Консультация займёт 20 минут<br> без просчёта, оформления <br>договора и оплаты.</div>
 
-            <input class="submit" type="submit">
-            <div class="submit__text">Вы не заполнили<br>Имя и Телефон</div>
+            <input class="submit" type="submit" value="отправить" name="name" id="submit" disabled>
+        </form>  
+            <div class="submit__text" id="submit__text">Вы не заполнили<br>Имя и Телефон</div>
             <div class="manager__name"><span>Евгения,<br></span>менеджер<br> по&nbsp;продаже</div>
         </div>
     </div>
@@ -212,7 +214,7 @@
 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 </script> подключаем jquery-->
-
+<script src="source/js/disabled.js"></script> 
 <script src="source/js/common.js"></script> <!--Правила для маски-->
 <!--<script src="assets/js/jquery.inputmask.js"></script>  готовый скрипт маски-->
 
